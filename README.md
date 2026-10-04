@@ -26,3 +26,8 @@ HTTP API 子模块：`com.chinatrip.api`，默认端口 **3001**。
 REST JSON 形状以 Harness 内 `packages/shared` 的 Zod schema 为**文档真相源**；Java DTO 须与之对齐（首个能力域稳定后可引入 OpenAPI 生成/校验）。
 
 当前：`GET /health` → `{ "ok": true, "service": "api" }`。
+
+## 持久化（规划）
+
+- 关系库：**MySQL 8**（`utf8mb4`），通过 Spring Data JPA 访问；迁移脚本 **Flyway**。
+- 细节与约束见超项目 `docs/ARCHITECTURE.md` § 数据存储。
