@@ -1,8 +1,12 @@
 node_modules/
-.next/
-dist/
-coverage/
+.gradle/
+build/
+out/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
 *.log
 .env
 .env.local
-tsconfig.tsbuildinfo
